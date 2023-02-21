@@ -1,0 +1,123 @@
+{
+    "events": [
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2021"
+        },
+        "text": {
+          "headline": "DBS: World's Best Yet Again",
+          "text": "<p>Honoured to be recognised by Euromoney and The Banker as the World's Best in 2021. <a href=\"https://www.dbs.com/about-us/who-we-are/awards-accolades/a-world-first/euromoney-awards-for-excellence\" target=\"_blank\">Read more</a></p>"
+        },
+         "background": {
+          "url": "images/people/timeline-piyush-gupta-01.jpg"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/5qVP0ooGTAM",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "5",
+          "day": "19",
+          "year": "2021",
+          "display_date": "19 May 2021"
+        },
+        "text": {
+          "headline": "Being a company for good: DBS CEO Piyush Gupta's speech for NVPC's Company of Good Fellowship",
+          "text": "<p>DBS CEO Piyush Gupta shared his thoughts on why and how a company can be a responsible participant in its community, balancing both shareholder and stakeholder interests.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "images/people/timeline-piyush-gupta-02.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "10",
+          "day": "29",
+          "year": "2019",
+          "display_date": "29 Oct 2019"
+        },
+        "text": {
+          "headline": "DBS CEO Piyush Gupta named among world's top 100 best-performing CEOs by Harvard Business Review",
+          "text": "<p>Named along likes of Microsoft's Satya Nadella, JPMorgan Chase's Jamie Dimon and Disney's Robert Iger. <a href=\"https://www.dbs.com/newsroom/DBS_CEO_Piyush_Gupta_named_among_worlds_top_100_Best_Performing_CEOs_by_Harvard_Business_Review\" target=\"_blank\">Read more</a></p>"
+        }
+      },
+       {
+        "media": {
+          "url": "images/people/timeline-piyush-gupta-03.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "11",
+          "day": "25",
+          "year": "2021",
+          "display_date": "25 Nov 2021"
+        },
+        "text": {
+          "headline": "'We act less like a bank and more like a tech company'",
+          "text": "<p>Piyush talks about the top trends in fintech and banking and why DBS is increasingly recognised as a global leader in \"digital transformation\". <a href=\"https://www.dbs.com/media/features/at-dbs-we-act-less-like-a-bank-and-more-like-a-tech-company-with-dbs-bank-ceo-piyush-gupta.page\" target=\"_blank\">Read more</a></p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/i1_192WTCHo",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "5",
+          "day": "19",
+          "year": "2018",
+          "display_date": "19 May 2018"
+        },
+        "text": {
+          "headline": "A New Brand Promise | DBS. Live more, Bank less",
+          "text": "<p>DBS launched our new brand promise 'Live more, Bank less' on 15 May, reinforcing our push to being an ‘invisible' bank by immersing ourselves in the customer's life. At the launch, Piyush articulated  what 'Live more, Bank less' means.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/PTjqxy--ZE8",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "1",
+          "day": "3",
+          "year": "2018",
+          "display_date": "3 Jan 2018"
+        },
+        "text": {
+          "headline": "DBS Bank Investor Day - Presentation by Piyush",
+          "text": "<p>Piyush tells the story behind our digital transformation and the impact it has created for the bank and our customers.</p>"
+        }
+      },
+       {
+        "media": {
+          "url": "images/people/timeline-piyush-gupta-04.jpg",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "month": "9",
+          "day": "1",
+          "year": "2009",
+          "display_date": "1 Sep 2009"
+        },
+        "text": {
+          "headline": "DBS appoints Piyush Gupta as CEO",
+          "text": "<p>27-year veteran banker is seasoned Asia hand with broad-based experience. <a href=\"https://www.dbs.com/newsroom/DBS_appoints_Piyush_Gupta_as_CEO\" target=\"_blank\">Read more</a></p>"
+        }
+      }
+    ]
+}
