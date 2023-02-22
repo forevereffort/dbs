@@ -1376,3 +1376,80 @@ main.search{
     }
   }
 }
+
+.video-card{
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-card__video{
+  height: 370px;
+  position: relative;
+
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-card__info{
+  padding: 40px 20px 20px 20px;
+
+  p{
+    margin: 0;
+  }
+
+  h3{
+    margin: 5px 0 20px 0;
+    font-size: 24px;
+  }
+}
+
+.video-card__info__label{
+  font-size: 12px;
+  font-weight: 600;
+  color: #6E6E73;
+}
+
+.info-card{
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  background-color: #CC0000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.info-card__img{
+  height: 370px;
+  
+  img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.info-card__info{
+  padding: 20px;
+
+  p{
+    color: #fff;
+    margin: 0;
+  }
+
+  h3{
+    color: #fff;
+    margin: 5px 0 20px;
+    font-size: 24px;
+  }
+}
+
+.info-card__info__label{
+  font-size: 12px;
+  font-weight: 600;
+}
