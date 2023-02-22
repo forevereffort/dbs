@@ -1502,3 +1502,25 @@ main.search{
     }
   }
 }
+
+.textWrap2{
+  padding: 80px 0 10px;
+
+  a{
+    color: #CC0000;
+
+    &::after{
+      display: inline-block;
+      content: '';
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2LjgxMSIgaGVpZ2h0PSIxMi4xMjEiIHZpZXdCb3g9IjAgMCA2LjgxMSAxMi4xMjEiPjxwYXRoIGQ9Ik05LDE2bDUtNUw5LDYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03LjkzOSAtNC45MzkpIiBmaWxsPSJub25lIiBzdHJva2U9IiNjMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L3N2Zz4=');
+      width: 7px;
+      height: 13px;
+      margin-left: 10px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
