@@ -268,6 +268,63 @@ $(document).ready(function () {
     initOwl();
   }
 
+  if($('.homepage .owlStoriesEachRow').length){
+    var featuredOwl = $('.homepage .owlStoriesEachRow');
+
+    var homepgeInitOwl = function() {
+      if(minLG){
+        var winWidth = $( window ).width();
+        var gridMaxWidth = 1280;
+        var customPadding = winWidth - gridMaxWidth ;
+        if(customPadding > 0) {
+            customPadding = customPadding / 2 + 20;
+        }
+        else {
+          customPadding = 20;
+        }
+        //console.log(customPadding);
+      }
+
+      featuredOwl.owlCarousel({
+        stagePadding: 0,
+        margin: 15,
+        items: 1,
+        loop: false,
+        nav: true,
+        dots: true,
+        dotsEach: false,
+        touchDrag: false,
+        responsive: {
+          321 : {
+            stagePadding: 20,
+            items: 1
+          },
+          768 : {
+            stagePadding: 20,
+            items: 2,
+            dots: true,
+          },
+          1280 : {
+            stagePadding: customPadding,
+            items: 2,
+            dots: false,
+            touchDrag: true
+          }
+        }
+      });
+    }
+
+    homepgeInitOwl();
+
+    var prevWinWidth = window.innerWidth;
+    $(window).on('resize', function() {
+      if (window.innerWidth !== prevWinWidth) {
+        featuredOwl.trigger('destroy.owl.carousel');
+        homepgeInitOwl();
+      }
+    });
+  }
+
    if($('.template2detail').length && $('.detail-timeline').length)  {
     loadTimelineJs();
    }
