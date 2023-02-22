@@ -1537,7 +1537,15 @@ main.search{
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
   background-color: #fff;
   border-radius: 20px;
-  overflow: hidden; 
+  overflow: hidden;
+  height: 100%;
+
+  a{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .bottom-card__info{
@@ -1612,5 +1620,42 @@ main.search{
     height: 100%;
     object-position: center;
     object-fit: cover;
+  }
+}
+
+.bottom-card__slider{
+  height: 100%;
+  
+  .owl-stage-outer{
+    height: 100%;
+  }
+
+  .owl-stage{
+    height: 100%;
+  }
+  
+  .owl-item{
+    height: 100%;
+  }
+
+  .owl-dots{
+    position: absolute;
+    left: 0;
+    bottom: 26px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-dot{
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff !important;
+
+    &.active{
+      background-color: #CC0000 !important;
+    }
   }
 }
