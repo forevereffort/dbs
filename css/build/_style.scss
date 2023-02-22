@@ -1382,6 +1382,7 @@ main.search{
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
+  height: 100%;
 }
 
 .video-card__video{
@@ -1417,7 +1418,7 @@ main.search{
 }
 
 .info-card{
-  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  // box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
   background-color: #CC0000;
   border-radius: 20px;
   overflow: hidden;
@@ -1436,7 +1437,7 @@ main.search{
 }
 
 .info-card__info{
-  padding: 20px;
+  padding: 20px 20px 55px 20px;
 
   p{
     color: #fff;
@@ -1489,6 +1490,15 @@ main.search{
 
     &.active{
       background-color: #EF6565;
+    }
+  }
+}
+
+.home-card{
+
+  @include bp(maxSM){
+    .md-6+.md-6{
+      margin-top: 20px;
     }
   }
 }
