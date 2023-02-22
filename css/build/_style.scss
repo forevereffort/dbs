@@ -1421,6 +1421,7 @@ main.search{
   background-color: #CC0000;
   border-radius: 20px;
   overflow: hidden;
+  height: 100%;
 }
 
 .info-card__img{
@@ -1452,4 +1453,42 @@ main.search{
 .info-card__info__label{
   font-size: 12px;
   font-weight: 600;
+}
+
+#info-card__slider{
+  height: 100%;
+  
+  .owl-stage-outer{
+    height: 100%;
+  }
+
+  .owl-stage{
+    height: 100%;
+  }
+
+  .owl-item{
+    height: 100%;
+  }
+
+  .owl-dots{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 25px;
+  }
+
+  .owl-dot{
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    &.active{
+      background-color: #EF6565;
+    }
+  }
 }

@@ -325,6 +325,15 @@ $(document).ready(function () {
     });
   }
 
+  if($('#info-card__slider').length){
+    $('#info-card__slider').owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: false,
+      items: 1
+    })
+  }
+
    if($('.template2detail').length && $('.detail-timeline').length)  {
     loadTimelineJs();
    }
