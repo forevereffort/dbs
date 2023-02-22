@@ -1524,3 +1524,47 @@ main.search{
     }
   }
 }
+
+.bottom-card{
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+.bottom-card__info{
+  padding: 25px 20px 30px 20px;
+
+  ul{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6E6E73;
+    display: flex;
+    margin: 0;
+  }
+
+  h3{
+    margin: 10px 0;
+    font-size: 24px;
+  }
+
+  p{
+    margin: 0;
+    color: #CC0000;
+
+    &::after{
+      display: inline-block;
+      content: '';
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2LjgxMSIgaGVpZ2h0PSIxMi4xMjEiIHZpZXdCb3g9IjAgMCA2LjgxMSAxMi4xMjEiPjxwYXRoIGQ9Ik05LDE2bDUtNUw5LDYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03LjkzOSAtNC45MzkpIiBmaWxsPSJub25lIiBzdHJva2U9IiNjMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L3N2Zz4=');
+      width: 7px;
+      height: 13px;
+      margin-left: 10px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
