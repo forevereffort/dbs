@@ -916,7 +916,7 @@ main.homepage{
   background-color: #f5f7f6;
   .textWrap{
     padding-top: 44px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   .videoWrap{
     position: relative;
@@ -1408,6 +1408,10 @@ main.search{
   h3{
     margin: 5px 0 20px 0;
     font-size: 24px;
+
+    @include bp(maxSM){
+      font-size: 20px;
+    }
   }
 }
 
@@ -1448,6 +1452,10 @@ main.search{
     color: #fff;
     margin: 5px 0 20px;
     font-size: 24px;
+
+    @include bp(maxSM){
+      font-size: 20px;
+    }
   }
 }
 
@@ -1547,6 +1555,10 @@ main.search{
   h3{
     margin: 10px 0;
     font-size: 24px;
+
+    @include bp(maxSM){
+      font-size: 18px;
+    }
   }
 
   p{
@@ -1566,5 +1578,39 @@ main.search{
       position: relative;
       top: 1px;
     }
+  }
+}
+
+.bottom-card__list{
+  margin-top: 40px;
+  
+  @include bp(maxMD){
+    margin-top: 20px;
+    
+    .md-6{
+      margin-top: 20px;
+    }
+  }
+}
+
+.bottom-card__img{
+  height: 320px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.bottom-card__img-small{
+  height: 270px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
   }
 }
