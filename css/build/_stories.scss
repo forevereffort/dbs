@@ -25,6 +25,10 @@ main.storiesPage{
       border-radius: 20px;
       overflow: hidden;
 
+      @include bp(maxSM){
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+      }
+
       .imgWrap{
         position: relative;
         width: 100%;

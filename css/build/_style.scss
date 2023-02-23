@@ -1019,6 +1019,10 @@ main.homepage{
       box-shadow: 2px 4px 12px rgb(0 0 0 / 30%);
       border-radius: 20px;
       overflow: hidden;
+
+      @include bp(maxSM){
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+      }
       
       .imgWrap{
         position: relative;
