@@ -1383,6 +1383,7 @@ main.search{
   border-radius: 20px;
   overflow: hidden;
   height: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .video-card__video{
@@ -1390,6 +1391,7 @@ main.search{
   position: relative;
 
   iframe{
+    border: 0;
     position: absolute;
     top: 0;
     left: 0;
