@@ -293,7 +293,7 @@ $(document).ready(function () {
         nav: true,
         dots: true,
         dotsEach: false,
-        touchDrag: false,
+        touchDrag: true,
         responsive: {
           321 : {
             stagePadding: 20,
@@ -308,7 +308,6 @@ $(document).ready(function () {
             stagePadding: customPadding,
             items: 2,
             dots: false,
-            touchDrag: true
           }
         }
       });

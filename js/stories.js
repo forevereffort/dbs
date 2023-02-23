@@ -75,7 +75,7 @@ var initOwl = function() {
           nav: true,
           dots: true,
           dotsEach: false,
-          touchDrag: false,
+          touchDrag: true,
           responsive: {
               321 : {
                 stagePadding: 20,
@@ -90,7 +90,6 @@ var initOwl = function() {
                 stagePadding: customPadding,
                 items: 2,
                 dots: false,
-                touchDrag: true
               }
           }
       });
