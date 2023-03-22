@@ -1,6 +1,6 @@
  // Include gulp
 var gulp = require('gulp'),
-    sass = require('gulp-sass')(require('sass')),
+    sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     gcmq = require('gulp-group-css-media-queries'),
     concat = require('gulp-concat'),
