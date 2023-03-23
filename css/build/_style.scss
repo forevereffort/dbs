@@ -1708,11 +1708,15 @@ main.search{
 }
 
 .home-bottom__cta{
-  height: 396px;
+  height: 366px;
   position: relative;
   text-align: center;
   display: flex;
   align-items: center;
+
+  @include bp(minMD){
+    height: 396px;
+  }
 
   .g{
     position: relative;
