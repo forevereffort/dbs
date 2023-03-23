@@ -352,6 +352,18 @@ $(document).ready(function () {
     })
   }
 
+  if($('.home-hero .owl-carousel').length){
+    var homeHeroCarousel = $('.home-hero .owl-carousel');
+
+    homeHeroCarousel.owlCarousel({
+      loop: false,
+      nav: true,
+      dots: false,
+      items: 1,
+      margin: 0
+    })
+  }
+
   if($('#info-card__slider').length){
     $('#info-card__slider').owlCarousel({
       loop: false,

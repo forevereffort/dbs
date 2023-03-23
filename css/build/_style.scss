@@ -1938,9 +1938,37 @@ main.search{
   }
 }
 
+.home-hero{
+  height: 740px;
+  
+  @include bp(minMD){
+    height: 924px;
+  }
+
+  @include bp(minLG){
+    height: 635px;
+  }
+
+  .owl-carousel{
+    height: 100%;
+  }
+  
+  .owl-stage-outer{
+    height: 100%;
+  }
+
+  .owl-stage{
+    height: 100%;
+  }
+
+  .owl-item{
+    height: 100%;
+  }
+}
+
 .home-hero__card{
-  height: 635px;
   position: relative;
+  height: 100%;
 }
 
 .home-hero__card-img{
@@ -1964,6 +1992,11 @@ main.search{
   z-index: 2;
   text-align: center;
   height: 100%;
+
+  img{
+    display: initial !important;
+    width: auto !important;
+  }
   
   .g{
     height: 100%;
@@ -1985,10 +2018,15 @@ main.search{
   }
 
   h2{
-    margin: 0;
-    font-size: 80px;
+    margin: 0 0 40px;
+    font-size: 60px;
     line-height: 1;
     color: rgba(255, 255, 255, 0.6);
+
+    @include bp(minMD){
+      margin-bottom: 20px;
+      font-size: 80px;
+    }
   }
 
   p{
