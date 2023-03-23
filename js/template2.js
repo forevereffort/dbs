@@ -324,6 +324,34 @@ $(document).ready(function () {
     });
   }
 
+  if($('.home-gallery .owl-carousel').length){
+    var homeGalleryCarousel = $('.home-gallery .owl-carousel');
+
+    homeGalleryCarousel.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      responsive:{
+        0:{
+          items: 1,
+          margin: 14,
+        },
+        400:{ //768
+          items: 2,
+          margin: 14,
+        },
+        900: {
+          item: 3,
+          margin: 20,
+        },
+        1280:{
+          items: 4,
+          margin: 20,
+        }
+      }
+    })
+  }
+
   if($('#info-card__slider').length){
     $('#info-card__slider').owlCarousel({
       loop: false,
