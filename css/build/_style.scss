@@ -1937,3 +1937,76 @@ main.search{
     @include transition(all, 0.3s, cubic-bezier(0.4, 0.0, 0.2, 1));
   }
 }
+
+.home-hero__card{
+  height: 635px;
+  position: relative;
+}
+
+.home-hero__card-img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.home-hero__card-content{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 100%;
+  
+  .g{
+    height: 100%;
+  }
+  
+  .r{
+    height: 100%;
+  }
+
+  h4{
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+    color: #D3B886;
+    text-transform: uppercase;
+
+    &.home-hero__card-1{
+      margin: 10px 0 30px;
+    }
+  }
+
+  h2{
+    margin: 0;
+    font-size: 80px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  p{
+    margin: 0;
+    color: #fff;
+
+    &.home-hero__card-num{
+      font-size: 14px;
+      color: #D3B886;
+    }
+  }
+}
+
+.home-hero__card-link{
+  margin-top: 60px;
+
+  a{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
