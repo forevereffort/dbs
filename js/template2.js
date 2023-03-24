@@ -361,15 +361,23 @@ $(document).ready(function () {
       loop: false,
       nav: false,
       dots: false,
-      dotsEach: false,
-      mouseDrag: false,
-      touchDrag: false,
       onTranslate: function (e) {
         $(e.target).addClass('translating');
       },
       onTranslated: function (e) {
         $(e.target).removeClass('translating');
       },
+      responsive:{
+        0: {
+          dots: true
+        },
+        768: {
+          dots: false,
+          dotsEach: false,
+          mouseDrag: false,
+          touchDrag: false,
+        }
+      }
     })
 
     $('.home-hero__left').click(function () {
