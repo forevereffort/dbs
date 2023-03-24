@@ -372,6 +372,14 @@ $(document).ready(function () {
       },
     })
 
+    $('.home-hero__left').click(function () {
+      homeHeroCarousel.trigger('prev.owl.carousel', [700]);
+    })
+    
+    $('.home-hero__right').click(function () {
+      homeHeroCarousel.trigger('next.owl.carousel', [700]);
+    })
+
     // const cursorRounded = document.querySelector('.home-hero__cursor-round');
     // const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
 

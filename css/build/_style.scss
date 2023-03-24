@@ -1992,7 +1992,7 @@ main.search{
 }
 
 .home-hero__nav{
-  background-color: red;
+  // background-color: red;
   display: flex;
   align-items: center;
   
@@ -2024,10 +2024,10 @@ main.search{
     left: 100%;
     height: 1px;
     background-color: #fff;
-    width: 100%;
+    width: calc(100% - 10px);
     
     @include bp(minLG){
-      width: 200%;
+      width: calc(200% - 10px);
     }
   }
 }
@@ -2037,7 +2037,7 @@ main.search{
   left: 0;
   top: 0;
   height: 100%;
-  background-color: #000;
+  // background-color: #000;
   z-index: 2;
   display: none;
 
@@ -2057,7 +2057,7 @@ main.search{
   right: 0;
   top: 0;
   height: 100%;
-  background-color: #000;
+  // background-color: #000;
   z-index: 2;
   display: none;
 
@@ -2090,6 +2090,7 @@ main.search{
 .home-hero__card{
   position: relative;
   height: 100%;
+  transform: scale(1);
 }
 
 .home-hero__card-img{
@@ -2167,5 +2168,31 @@ main.search{
   a{
     font-weight: 700;
     text-decoration: underline;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+
+  30% {
+    transform: scale(5, 0.95);
+    filter: blur(20px) brightness(3);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+.owlBlurTransition{
+  
+  &.translating {
+    .home-hero__card {
+      animation: scale 0.7s cubic-bezier(0.36, 0, 0.66, -0.56);
+    }
   }
 }
