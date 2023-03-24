@@ -356,12 +356,46 @@ $(document).ready(function () {
     var homeHeroCarousel = $('.home-hero .owl-carousel');
 
     homeHeroCarousel.owlCarousel({
-      loop: false,
-      nav: true,
-      dots: false,
+      margin: 0,
       items: 1,
-      margin: 0
+      loop: false,
+      nav: false,
+      dots: false,
+      dotsEach: false,
+      mouseDrag: false,
+      touchDrag: false,
+      onTranslate: function (e) {
+        $(e.target).addClass('translating');
+      },
+      onTranslated: function (e) {
+        $(e.target).removeClass('translating');
+      },
     })
+
+    // const cursorRounded = document.querySelector('.home-hero__cursor-round');
+    // const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
+
+    // const moveCursor = (e)=> {
+    //   const mouseY = e.clientY;
+    //   const mouseX = e.clientX;
+
+    //   const w = cursorRounded.offsetWidth;
+    //   const x = parseInt(mouseX - w / 2);
+    //   const y = parseInt(mouseY - w / 2);
+
+    //   const wA = cursorArrow.offsetWidth;
+    //   const hA = cursorArrow.offsetHeight;
+    //   const xA = parseInt(mouseX - wA / 2 - w / 3);
+    //   const yA = parseInt(mouseY - hA / 2);
+
+    //   cursorRounded.style.left = x + 'px';
+    //   cursorRounded.style.top = y + 'px';
+
+    //   cursorArrow.style.left = xA + 'px';
+    //   cursorArrow.style.top = yA + 'px';
+    // }
+
+    // window.addEventListener('mousemove', moveCursor)
   }
 
   if($('#info-card__slider').length){
