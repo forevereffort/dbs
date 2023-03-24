@@ -365,6 +365,18 @@ $(document).ready(function () {
         $(e.target).addClass('translating');
       },
       onTranslated: function (e) {
+        if(0 < e.item.index){
+          $('.home-hero__left').removeClass('home-hero__left--hidden');
+        } else {
+          $('.home-hero__left').addClass('home-hero__left--hidden');
+        }
+
+        if(e.item.index < e.item.count - 1){
+          $('.home-hero__right').removeClass('home-hero__right--hidden');
+        } else {
+          $('.home-hero__right').addClass('home-hero__right--hidden');
+        }
+
         $(e.target).removeClass('translating');
       },
       responsive:{
@@ -388,30 +400,29 @@ $(document).ready(function () {
       homeHeroCarousel.trigger('next.owl.carousel', [700]);
     })
 
-    const cursorRounded = document.querySelector('.home-hero__cursor-round');
-    const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
+    // const cursorRounded = document.querySelector('.home-hero__cursor-round');
+    // const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
 
-    const moveCursor = (e)=> {
-      const mouseY = e.clientY;
-      const mouseX = e.clientX;
+    $('.home-hero').mousemove(function(e){
+      console.log(1)
+      // const mouseY = e.clientY;
+      // const mouseX = e.clientX;
 
-      const w = cursorRounded.offsetWidth;
-      const x = parseInt(mouseX - w / 2);
-      const y = parseInt(mouseY - w / 2);
+      // const w = cursorRounded.offsetWidth;
+      // const x = parseInt(mouseX - w / 2);
+      // const y = parseInt(mouseY - w / 2);
 
-      const wA = cursorArrow.offsetWidth;
-      const hA = cursorArrow.offsetHeight;
-      const xA = parseInt(mouseX - wA / 2 - w / 3);
-      const yA = parseInt(mouseY - hA / 2);
+      // const wA = cursorArrow.offsetWidth;
+      // const hA = cursorArrow.offsetHeight;
+      // const xA = parseInt(mouseX - wA / 2 - w / 3);
+      // const yA = parseInt(mouseY - hA / 2);
 
-      cursorRounded.style.left = x + 'px';
-      cursorRounded.style.top = y + 'px';
+      // cursorRounded.style.left = x + 'px';
+      // cursorRounded.style.top = y + 'px';
 
-      cursorArrow.style.left = xA + 'px';
-      cursorArrow.style.top = yA + 'px';
-    }
-
-    window.addEventListener('mousemove', moveCursor)
+      // cursorArrow.style.left = xA + 'px';
+      // cursorArrow.style.top = yA + 'px';
+    })
   }
 
   if($('#info-card__slider').length){

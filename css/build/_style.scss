@@ -1947,9 +1947,11 @@ main.search{
   z-index: 2;
   left: 0;
   top: 0;
+  // display: none;
 }
 
 .home-hero__cursor-arrow{
+  // display: none;
   position: fixed;
   z-index: 3;
   left: 0;
@@ -1960,6 +1962,7 @@ main.search{
 }
 
 .home-hero{
+  overflow: hidden;
   position: relative;
   // cursor: none;
   height: 740px;
@@ -2060,6 +2063,7 @@ main.search{
   // background-color: #000;
   z-index: 2;
   display: none;
+  user-select: none;
 
   @include bp(minMD){
     display: flex;
@@ -2072,6 +2076,11 @@ main.search{
   }
 }
 
+.home-hero__left--hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
 .home-hero__right{
   position: absolute;
   right: 0;
@@ -2080,6 +2089,7 @@ main.search{
   // background-color: #000;
   z-index: 2;
   display: none;
+  user-select: none;
 
   @include bp(minMD){
     display: flex;
@@ -2105,6 +2115,11 @@ main.search{
       right: 100%;
     }
   }
+}
+
+.home-hero__right--hidden{
+  visibility: hidden;
+  opacity: 0;
 }
 
 .home-hero__card{
