@@ -400,28 +400,27 @@ $(document).ready(function () {
       homeHeroCarousel.trigger('next.owl.carousel', [700]);
     })
 
-    // const cursorRounded = document.querySelector('.home-hero__cursor-round');
-    // const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
+    const cursorRounded = document.querySelector('.home-hero__cursor-round');
+    const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
 
+    
     $('.home-hero').mousemove(function(e){
-      console.log(1)
-      // const mouseY = e.clientY;
-      // const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const mouseX = e.clientX;
+        
+      const w = cursorRounded.offsetWidth;
+      const t = cursorRounded.offsetTop;
+      const x = parseInt(mouseX - w / 2);
+      const y = parseInt(mouseY - w / 2 - t);
 
-      // const w = cursorRounded.offsetWidth;
-      // const x = parseInt(mouseX - w / 2);
-      // const y = parseInt(mouseY - w / 2);
+      const wA = cursorArrow.offsetWidth;
+      const hA = cursorArrow.offsetHeight;
+      const tA = cursorArrow.offsetTop;
+      const xA = parseInt(mouseX - wA / 2 -  w / 2);
+      const yA = parseInt(mouseY - hA / 2 - tA);
 
-      // const wA = cursorArrow.offsetWidth;
-      // const hA = cursorArrow.offsetHeight;
-      // const xA = parseInt(mouseX - wA / 2 - w / 3);
-      // const yA = parseInt(mouseY - hA / 2);
-
-      // cursorRounded.style.left = x + 'px';
-      // cursorRounded.style.top = y + 'px';
-
-      // cursorArrow.style.left = xA + 'px';
-      // cursorArrow.style.top = yA + 'px';
+      cursorRounded.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      cursorArrow.style.transform = `translate3d(${xA}px, ${yA}px, 0)`;
     })
   }
 

@@ -1943,26 +1943,26 @@ main.search{
   border-radius: 50%;
   width: 54px;
   height: 54px;
-  border: 1px solid #fff;
+  // border: 1px solid #fff;
+  border: 1px solid red;
   z-index: 2;
-  left: 0;
-  top: 0;
   // display: none;
+  pointer-events: none;
 }
 
 .home-hero__cursor-arrow{
   // display: none;
   position: fixed;
   z-index: 3;
-  left: 0;
-  top: 0;
   display: flex;
   // transform: rotate(180deg);
   // transform-origin: right center;
+  pointer-events: none;
+  transition: transform 200ms ease-out;
 }
 
 .home-hero{
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   // cursor: none;
   height: 740px;
