@@ -1955,10 +1955,18 @@ main.search{
   position: fixed;
   z-index: 3;
   display: flex;
-  // transform: rotate(180deg);
-  // transform-origin: right center;
   pointer-events: none;
-  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, opacity 200ms ease-out, visibility 200ms ease-out;
+}
+
+.home-hero__cursor-arrow-rotate{
+  transform: rotate(180deg);
+  transform-origin: right center;
+}
+
+.home-hero__cursor-arrow-hidden{
+  opacity: 0;
+  visibility: hidden;
 }
 
 .home-hero{
@@ -2077,8 +2085,10 @@ main.search{
 }
 
 .home-hero__left--hidden{
-  opacity: 0;
-  visibility: hidden;
+  .home-hero__nav{
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .home-hero__right{
@@ -2118,8 +2128,11 @@ main.search{
 }
 
 .home-hero__right--hidden{
-  visibility: hidden;
-  opacity: 0;
+
+  .home-hero__nav{
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .home-hero__card{
