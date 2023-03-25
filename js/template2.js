@@ -402,7 +402,6 @@ $(document).ready(function () {
 
     const cursorRounded = document.querySelector('.home-hero__cursor-round');
     const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
-
     
     $('.home-hero').mousemove(function(e){
       const mouseY = e.clientY;
@@ -420,7 +419,13 @@ $(document).ready(function () {
       const yA = parseInt(mouseY - hA / 2 - tA);
 
       cursorRounded.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-      cursorArrow.style.transform = `translate3d(${xA}px, ${yA}px, 0)`;
+
+      if( cursorArrow.classList.contains("home-hero__cursor-arrow-rotate") ){
+        cursorArrow.style.transform = `translate3d(${xA}px, ${yA}px, 0)`;
+        cursorArrow.style.transform += `rotate(180deg)`;
+      } else {
+        cursorArrow.style.transform = `translate3d(${xA}px, ${yA}px, 0)`;
+      }
     })
 
     $('.home-hero__left, .home-hero__right').mouseout(function(e){
