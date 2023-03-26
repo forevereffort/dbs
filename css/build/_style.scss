@@ -1947,10 +1947,16 @@ main.search{
   z-index: 2;
   // display: none;
   pointer-events: none;
+  transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
 
   @include bp(maxSM){
     display: none;
   }
+}
+
+.home-hero__cursor-round-hidden{
+  opacity: 0;
+  visibility: hidden;
 }
 
 .home-hero__cursor-arrow{

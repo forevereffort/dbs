@@ -406,6 +406,8 @@ $(document).ready(function () {
     const cursorArrow = document.querySelector('.home-hero__cursor-arrow');
     
     $('.home-hero').mousemove(function(e){
+      $('.home-hero__cursor-round').removeClass('home-hero__cursor-round-hidden');
+      
       const mouseY = e.clientY;
       const mouseX = e.clientX;
         
@@ -422,6 +424,11 @@ $(document).ready(function () {
 
       cursorRounded.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       cursorArrow.style.transform = `translate3d(${xA}px, ${yA}px, 0)`;
+    })
+
+    $('.home-hero').mouseout(function(){
+      $('.home-hero__cursor-round').addClass('home-hero__cursor-round-hidden');
+      $('.home-hero__cursor-arrow').addClass('home-hero__cursor-arrow-hidden');
     })
 
     $('.home-hero__left, .home-hero__right').mouseout(function(e){
