@@ -1947,6 +1947,10 @@ main.search{
   z-index: 2;
   // display: none;
   pointer-events: none;
+
+  @include bp(maxSM){
+    display: none;
+  }
 }
 
 .home-hero__cursor-arrow{
@@ -1956,11 +1960,18 @@ main.search{
   display: flex;
   pointer-events: none;
   transition: transform 200ms ease-out, opacity 200ms ease-out, visibility 200ms ease-out;
+
+  @include bp(maxSM){
+    display: none;
+  }
 }
 
 .home-hero__cursor-arrow-rotate{
-  // transform: rotate(180deg);
-  transform-origin: right center;
+
+  svg{
+    transform: rotate(180deg);
+    transform-origin: right center;
+  }
 }
 
 .home-hero__cursor-arrow-hidden{
@@ -1971,8 +1982,11 @@ main.search{
 .home-hero{
   // overflow: hidden;
   position: relative;
-  // cursor: none;
   height: 740px;
+
+  @include bp(minMD){
+    cursor: none;
+  }
   
   @include bp(minMD){
     height: 924px;
