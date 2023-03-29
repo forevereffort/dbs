@@ -2176,6 +2176,20 @@ main.search{
   }
 }
 
+.home-hero__card-img--desk{
+
+  @include bp(maxSM){
+    display: none !important;
+  }
+}
+
+.home-hero__card-img--mobile{
+
+  @include bp(minMD){
+    display: none !important;
+  }
+}
+
 .home-hero__card-content{
   position: relative;
   z-index: 2;
