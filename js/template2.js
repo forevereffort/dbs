@@ -363,6 +363,33 @@ $(document).ready(function () {
       dots: false,
       onTranslate: function (e) {
         $(e.target).addClass('translating');
+		
+		$(".yearRange").each(function(i,e) {
+		
+			var tl = gsap.timeline(),
+			mySplitText = new SplitText($(this), { type: "words,chars" }),
+			//chars = mySplitText.chars,
+			
+			
+			lastChars = mySplitText.chars.splice(mySplitText.chars.length-4,4);
+			
+			gsap.set($(this), { perspective: 1400 });
+			
+			tl.from(lastChars, {
+			  duration: 2.5,
+			  opacity: 0,
+			  transformOrigin: "top",
+			  rotationX: -90,
+			  ease: "power2.out",
+			  stagger: 0.1,
+			  force3D: true,
+			  transformStyle:"preserve-3d"
+			});
+			
+		});
+		
+		
+		
       },
       onTranslated: function (e) {
         if(0 < e.item.index){
