@@ -32,7 +32,6 @@ gulp.task('vendorScripts', function() {
         'js/vendors/owl.carousel.min.js',
         'js/vendors/timeline-min.js',
         'js/vendors/fancybox.umd.js',
-        'js/vendors/sprestlib.min.js',
         ])
         .pipe(concat('vendorScripts.js'))
         .pipe(rename('vendors.min.js'))
