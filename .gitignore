@@ -1,5 +1,8 @@
 /Components/PremiumComponents/
 /dist
+/images
+/files/media
+/files/favicons
 node_modules
 npm-debug.log
 yarn-error.log
