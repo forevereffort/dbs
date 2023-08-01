@@ -3346,6 +3346,18 @@ $colGap: 20px;
 
 .single-article__slider{
   margin-top: 30px;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: -50vw;
+    background-color: #f4f3ef;
+    z-index: 2;
+  }
 
   h3{
     font-weight: 600;
