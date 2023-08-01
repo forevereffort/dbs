@@ -722,11 +722,15 @@ $(document).ready(function () {
       loop: true,
       margin: 2,
       nav: false,
+      dots: false,
       responsive:{
         0:{
           items:1
         },
-        600:{
+        768:{
+          items:2
+        },
+        900:{
           items:3
         },
       }

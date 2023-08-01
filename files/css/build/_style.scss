@@ -3137,6 +3137,7 @@ $colGap: 20px;
 
 .single-article{
   padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 .single-article__info{
@@ -3344,6 +3345,7 @@ $colGap: 20px;
 }
 
 .single-article__slider{
+  margin-top: 30px;
 
   h3{
     font-weight: 600;
@@ -3356,10 +3358,19 @@ $colGap: 20px;
 }
 
 .single-article__slider_item{
-  padding: 30px;
+  padding: 20px;
 
   p{
     margin-top: 30px;
     color: #666;
+  }
+}
+
+.single-article__slider_item--box{
+  background-color: #fff;
+
+  h2{
+    margin-top: 30px;
+    font-weight: 600;
   }
 }
