@@ -782,6 +782,16 @@ $(document).ready(function () {
       },
     });
   }
+
+  if( $('.module-slider').length > 0 ){
+    $('.module-slider .owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      items:1
+    })
+  }
 });
 
 // ajax panel rerun conditions
