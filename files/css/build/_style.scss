@@ -3367,6 +3367,10 @@ $colGap: 20px;
   .owl-stage-outer{
     overflow: initial;
   }
+
+  .owl-stage{
+    display: flex;
+  }
 }
 
 .single-article__slider_item{
@@ -3380,6 +3384,7 @@ $colGap: 20px;
 
 .single-article__slider_item--box{
   background-color: #fff;
+  height: 100%;
 
   h2{
     margin-top: 30px;
