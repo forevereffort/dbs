@@ -719,7 +719,7 @@ $(document).ready(function () {
 
   if( $('.single-article__slider').length > 0 ){
     $('.single-article__slider--normal .owl-carousel').owlCarousel({
-      loop: true,
+      loop: false,
       margin: 2,
       nav: false,
       dots: false,
@@ -759,7 +759,7 @@ $(document).ready(function () {
         })
 
         $('.single-article__slider--article .owl-carousel').owlCarousel({
-          loop: true,
+          loop: false,
           margin: 2,
           nav: false,
           dots: false,
