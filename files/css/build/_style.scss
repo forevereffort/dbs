@@ -3436,15 +3436,10 @@ $colGap: 20px;
     bottom: 100px;
   }
 
-  h2{
-    font-size: 36px;
+  h1{
     color: #fff;
     font-weight: 600;
     margin-top: 10px;
-
-    @include bp(minMD){
-      font-size: 44px;
-    }
   }
 }
 

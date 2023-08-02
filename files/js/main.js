@@ -752,6 +752,7 @@ $(document).ready(function () {
               sliderHtmlStr += '<img src="' + articleInfo.image_file_name + '">';
             sliderHtmlStr += '</a>';
             sliderHtmlStr += '<h2><a href="' + articleInfo.full_article_url + '">' + articleInfo.title + '</a></h2>';
+            sliderHtmlStr += '<p>' + articleInfo.description + '<p>';
           }
 
           $(elem).html(sliderHtmlStr);
