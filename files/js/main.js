@@ -595,6 +595,8 @@ $(document).ready(function () {
             }
           }
         }
+		
+		arrUniqueTags.sort();
 
         arrUniqueTags.forEach((tag) => {
           var selectedTag = false;
